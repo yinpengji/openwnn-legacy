@@ -63,11 +63,11 @@
   </Row>
   
   <Row android:rowEdgeFlags="bottom">
-    <Key android:codes="-230" android:keyIcon="@drawable/key_qwerty_mode_hira" android:iconPreview="@drawable/key_mode_change_b"
+    <Key android:codes="-230" android:keyIcon="@drawable/key_jp_mode_hira" android:iconPreview="@drawable/key_jp_mode_change_b"
 	 android:popupKeyboard="@xml/keyboard_switch_key_qwerty_jp"
          android:keyWidth="15%p" android:keyEdgeFlags="left"/>
     <Key android:codes="-106" android:keyWidth="15%p" android:keyLabel="@string/key_jp_symbol"/>
-    <Key android:codes="12288" android:keyIcon="@drawable/key_qwerty_space_conv" android:iconPreview="@drawable/key_qwerty_space_conv_b" 
+    <Key android:codes="12288" android:keyIcon="@drawable/key_space_conv" android:iconPreview="@drawable/key_space_conv_b" 
          android:keyWidth="30%p" android:isRepeatable="true"/>
     <Key android:codes="65281" android:keyLabel="@string/key_qwerty_full_exclamation_mark"
          android:keyWidth="12.5%p"/>
