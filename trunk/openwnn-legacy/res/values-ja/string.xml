@@ -131,8 +131,6 @@
     <string name="tip_to_step4"><b>ほかのモード（カタカナ・全角など)\nやＰＣ風のキーボードが使いたい場合、\n■キーを３秒押すと入力メニューが\n表示されます。</b></string>
     <string name="tip_to_step5"><b>入力が完了したら、携帯の\n「戻る」キー（←）を押して\nキーボードを閉じます。</b></string>
     <string name="tip_to_step6"><b>これでチュートリアルは終わりです。</b></string>
-    <string name="key_jp_symbol">記号</string>
-    <string name="key_cn_symbol">符</string>
 
 </resources>
 

@@ -110,7 +110,5 @@
       <string name="button_candidate_select">选择</string>
       <string name="button_candidate_delete">删除</string>
       <string name="button_candidate_cancel">关闭</string>
-      <string name="key_cn_symbol">符</string>
-      <string name="key_jp_symbol">記号</string>
 </resources>
 

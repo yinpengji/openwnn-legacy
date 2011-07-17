@@ -65,13 +65,13 @@
   </Row>
   
   <Row android:rowEdgeFlags="bottom">
-    <Key android:codes="-114" android:keyLabel="ALT"
+    <Key android:codes="-114" android:keyLabel="@string/key_alt"
 	 android:popupKeyboard="@xml/default_en_switch_key"
          android:keyWidth="15%p" android:keyEdgeFlags="left"/>
     <Key android:codes="-106" android:keyLabel="SYM" android:keyWidth="10%p"/>
     <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"/>
     <Key android:codes="32"
-	 android:keyIcon="@drawable/key_qwerty_space" android:iconPreview="@drawable/key_qwerty_space_b" 
+	 android:keyIcon="@drawable/key_space" android:iconPreview="@drawable/key_space_b" 
          android:keyWidth="30%p" android:isRepeatable="true"/>
     <Key android:codes="46" android:keyLabel="."  android:keyWidth="10%p"/>
     <Key android:codes="63" android:keyLabel="\?" android:keyWidth="10%p"/>

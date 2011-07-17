@@ -44,11 +44,11 @@
         <Key android:codes="-207" android:keyLabel="7" android:horizontalGap="2%"/>
         <Key android:codes="-208" android:keyLabel="8"/>
         <Key android:codes="-209" android:keyLabel="9"/>
-        <Key android:codes="-215" android:keyIcon="@drawable/key_12key_space" android:iconPreview="@drawable/key_12key_space_b" android:isRepeatable="true" android:keyEdgeFlags="right"  android:horizontalGap="2%" android:keyWidth="18%"/>
+        <Key android:codes="-215" android:keyIcon="@drawable/key_space" android:iconPreview="@drawable/key_space_b" android:isRepeatable="true" android:keyEdgeFlags="right"  android:horizontalGap="2%" android:keyWidth="18%"/>
     </Row>
     
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="-230" android:keyIcon="@drawable/key_12key_mode_full_num" android:iconPreview="@drawable/key_mode_change_b"
+        <Key android:codes="-230" android:keyIcon="@drawable/key_jp_mode_full_num" android:iconPreview="@drawable/key_jp_mode_change_b"
 	     android:popupKeyboard="@xml/keyboard_switch_key_jp" android:keyEdgeFlags="left" android:keyWidth="18%"/>
         <Key android:codes="-213" android:keyLabel="*"  android:horizontalGap="2%"/>
         <Key android:codes="-210" android:keyLabel="0" />
