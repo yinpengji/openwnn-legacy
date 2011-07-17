@@ -27,7 +27,7 @@
         <Key android:codes="-201" android:keyLabel="@string/key_12key_katakana_1" android:horizontalGap="2%"/>
         <Key android:codes="-202" android:keyLabel="@string/key_12key_katakana_2"/>
         <Key android:codes="-203" android:keyLabel="@string/key_12key_katakana_3"/>
-        <Key android:codes="-214" android:keyIcon="@drawable/key_12key_del" android:iconPreview="@drawable/key_12key_del_b"
+        <Key android:codes="-214" android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b"
              android:isRepeatable="true" android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%"/>
     </Row>
     
@@ -40,8 +40,7 @@
     </Row>
     
     <Row>
-        <Key android:codes="-222"  android:keyIcon="@drawable/key_12key_pict_sym" android:iconPreview="@drawable/key_12key_pict_sym_b"
-	     android:keyEdgeFlags="left" android:keyWidth="18%"/>
+        <Key android:codes="-222"  android:keyEdgeFlags="left" android:keyWidth="18%" android:keyLabel="@string/key_jp_symbol"/>
         <Key android:codes="-207" android:keyLabel="@string/key_12key_katakana_7" android:horizontalGap="2%"/>
         <Key android:codes="-208" android:keyLabel="@string/key_12key_katakana_8"/>
         <Key android:codes="-209" android:keyLabel="@string/key_12key_katakana_9"/>
@@ -54,7 +53,7 @@
         <Key android:codes="-213" android:keyIcon="@drawable/key_12key_dakuten" android:iconPreview="@drawable/key_12key_dakuten_b"   android:horizontalGap="2%"/>
         <Key android:codes="-210" android:keyLabel="@string/key_12key_katakana_0" />
         <Key android:codes="-211" android:keyIcon="@drawable/key_12key_ten" android:iconPreview="@drawable/key_12key_ten_b" />
-        <Key android:codes="-216" android:keyIcon="@drawable/key_12key_enter_jp" android:iconPreview="@drawable/key_12key_enter_jp_b" 
+        <Key android:codes="-216" android:keyIcon="@drawable/key_enter_jp" android:iconPreview="@drawable/key_enter_jp_b" 
              android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%"/>
     </Row>
 </Keyboard>

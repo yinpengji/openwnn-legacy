@@ -28,7 +28,7 @@
         <Key android:codes="50" android:keyLabel="2"/>
         <Key android:codes="51" android:keyLabel="3"/>
         <Key android:codes="-214"
-	     android:keyIcon="@drawable/key_12key_del" android:iconPreview="@drawable/key_12key_del_b"
+	     android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b"
              android:isRepeatable="true" android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%"/>
     </Row>
     
@@ -53,8 +53,8 @@
         <Key android:codes="42" android:keyLabel="*"  android:horizontalGap="2%"/>
         <Key android:codes="48" android:keyLabel="0" />
         <Key android:codes="35" android:keyLabel="#" />
-        <Key android:codes="-216" android:keyIcon="@drawable/key_12key_enter"
-             android:iconPreview="@drawable/key_12key_enter_b" 
+        <Key android:codes="-216" android:keyIcon="@drawable/key_enter"
+             android:iconPreview="@drawable/key_enter_b" 
              android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%"/>
     </Row>
 </Keyboard>

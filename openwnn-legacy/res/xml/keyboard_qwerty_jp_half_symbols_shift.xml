@@ -57,7 +57,7 @@
     <Key android:codes="39" android:keyLabel="'"/>
     <Key android:codes="44" android:keyLabel="," />
     <Key android:codes="46" android:keyLabel="." />
-    <Key android:codes="-100" android:keyIcon="@drawable/key_qwerty_del" android:iconPreview="@drawable/key_qwerty_del_b" android:keyWidth="15%p" 
+    <Key android:codes="-100" android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b" android:keyWidth="15%p" 
 	     android:keyEdgeFlags="right" android:isRepeatable="true"/>
   </Row>
   
@@ -70,7 +70,7 @@
          android:keyWidth="30%p" android:isRepeatable="true"/>
     <Key android:codes="33" android:keyLabel="!" android:keyWidth="12.5%p" />
     <Key android:codes="63" android:keyLabel="\?" android:keyWidth="12.5%p" />
-    <Key android:codes="-101" android:keyIcon="@drawable/key_qwerty_enter" android:iconPreview="@drawable/key_qwerty_enter_b" 
+    <Key android:codes="-101" android:keyIcon="@drawable/key_enter" android:iconPreview="@drawable/key_enter_b" 
          android:keyWidth="15%p" android:keyEdgeFlags="right"/>
   </Row>
 </Keyboard>

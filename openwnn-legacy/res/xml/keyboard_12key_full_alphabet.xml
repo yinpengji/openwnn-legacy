@@ -27,7 +27,7 @@
         <Key android:codes="-201" android:keyIcon="@drawable/key_12key_alpha1" android:iconPreview="@drawable/key_12key_alpha1_b" android:horizontalGap="2%"/>
         <Key android:codes="-202" android:keyIcon="@drawable/key_12key_alpha2" android:iconPreview="@drawable/key_12key_alpha2_b"/>
         <Key android:codes="-203" android:keyIcon="@drawable/key_12key_alpha3" android:iconPreview="@drawable/key_12key_alpha3_b"/>
-        <Key android:codes="-214" android:keyIcon="@drawable/key_12key_del" android:iconPreview="@drawable/key_12key_del_b"
+        <Key android:codes="-214" android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b"
              android:isRepeatable="true" android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%"/>
     </Row>
     
@@ -40,8 +40,7 @@
     </Row>
     
     <Row>
-        <Key android:codes="-222" android:keyIcon="@drawable/key_12key_pict_sym" android:iconPreview="@drawable/key_12key_pict_sym_b"
-	     android:keyEdgeFlags="left" android:keyWidth="18%"/>
+        <Key android:codes="-222" android:keyEdgeFlags="left" android:keyWidth="18%" android:keyLabel="@string/key_jp_symbol"/>
         <Key android:codes="-207" android:keyIcon="@drawable/key_12key_alpha7" android:iconPreview="@drawable/key_12key_alpha7_b" android:horizontalGap="2%"/>
         <Key android:codes="-208" android:keyIcon="@drawable/key_12key_alpha8" android:iconPreview="@drawable/key_12key_alpha8_b"/>
         <Key android:codes="-209" android:keyIcon="@drawable/key_12key_alpha9" android:iconPreview="@drawable/key_12key_alpha9_b"/>
@@ -54,7 +53,7 @@
         <Key android:codes="-213" android:keyIcon="@drawable/key_12key_caps" android:iconPreview="@drawable/key_12key_caps_b" android:horizontalGap="2%"/>
         <Key android:codes="-210" android:keyIcon="@drawable/key_12key_alpha0" android:iconPreview="@drawable/key_12key_alpha0_b"/>
         <Key android:codes="-211" android:keyIcon="@drawable/key_12key_period_comma" android:iconPreview="@drawable/key_12key_period_comma_b" />
-        <Key android:codes="-216" android:keyIcon="@drawable/key_12key_enter_jp" android:iconPreview="@drawable/key_12key_enter_jp_b" 
+        <Key android:codes="-216" android:keyIcon="@drawable/key_enter_jp" android:iconPreview="@drawable/key_enter_jp_b" 
              android:keyEdgeFlags="right" android:horizontalGap="2%" android:keyWidth="18%"/>
     </Row>
 </Keyboard>
