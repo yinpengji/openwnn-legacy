@@ -262,6 +262,9 @@
     <string name="tip_en_to_close_keyboard"><b>Press \"back\" (←) to close the keyboard.</b></string>
     <string name="tip_en_end_of_tutorial"><b>This is the end of the tutorial.</b></string>
     <string name="application_label">OpenWnn Lagency</string>
+    <string name="key_symbol">SYM</string>
+    <string name="key_cn_symbol">SYM</string>
+    <string name="key_jp_symbol">SYM</string>
 
 </resources>
 

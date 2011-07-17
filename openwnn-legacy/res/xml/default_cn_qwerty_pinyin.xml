@@ -68,7 +68,7 @@
     <Key android:codes="-114" android:keyLabel="ALT"
 	 android:popupKeyboard="@xml/default_cn_switch_key"
          android:keyWidth="15%p" android:keyEdgeFlags="left"/>
-    <Key android:codes="-106" android:keyLabel="SYM" android:keyWidth="10%p"/>
+    <Key android:codes="-106" android:keyLabel="@string/key_cn_symbol" android:keyWidth="10%p"/>
     <Key android:codes="65292" android:keyLabel="@string/key_qwerty_full_comma" android:keyWidth="10%p"></Key>
     <Key android:codes="32"
 	 android:keyIcon="@drawable/key_qwerty_space_pinyin" android:iconPreview="@drawable/key_qwerty_space_pinyin_b" 
