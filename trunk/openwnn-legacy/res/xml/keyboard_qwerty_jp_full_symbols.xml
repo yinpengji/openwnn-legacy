@@ -65,8 +65,7 @@
         <Key android:codes="-230" android:keyIcon="@drawable/key_qwerty_mode_full_num" android:iconPreview="@drawable/key_mode_change_b"
 	         android:popupKeyboard="@xml/keyboard_switch_key_qwerty_jp"
              android:keyWidth="15%p" android:keyEdgeFlags="left" />
-        <Key android:codes="-106" android:keyIcon="@drawable/key_qwerty_pict_sym" android:iconPreview="@drawable/key_qwerty_pict_sym_b"
-             android:keyWidth="15%p" />
+        <Key android:codes="-106" android:keyWidth="15%p" android:keyLabel="@string/key_jp_symbol"/>
         <Key android:codes="12288" android:keyIcon="@drawable/key_qwerty_space" android:iconPreview="@drawable/key_qwerty_space_b" 
              android:keyWidth="30%p" android:isRepeatable="true"/>
         <Key android:codes="65292" android:keyLabel="@string/key_qwerty_full_comma"  android:keyWidth="12.5%p" />
