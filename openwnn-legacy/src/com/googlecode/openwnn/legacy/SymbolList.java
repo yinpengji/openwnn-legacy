@@ -53,7 +53,7 @@ public class SymbolList implements WnnEngine {
     public static final String SYMBOL_ENGLISH = "e";
 
     /** Key string to get normal symbol list for Chinese */
-    public static final String SYMBOL_CHINESE = "c1";
+    public static final String SYMBOL_CHINESE = "c";
 
     /** Key string to get emotion list */
     public static final String SYMBOL_EMOTION  = "emotion";
