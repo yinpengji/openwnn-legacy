@@ -45,7 +45,7 @@ public class SymbolList implements WnnEngine {
     /** Language definition (Chinese) */
     public static final int LANG_ZHCN = 2;
 
-    
+
     /** Key string to get normal symbol list for Japanese */
     public static final String SYMBOL_JAPANESE = "j";
 
@@ -55,8 +55,8 @@ public class SymbolList implements WnnEngine {
     /** Key string to get normal symbol list for Chinese */
     public static final String SYMBOL_CHINESE = "c1";
 
-    /** Key string to get face mark list for Japanese */
-    public static final String SYMBOL_JAPANESE_FACE  = "j_face";
+    /** Key string to get emotion list */
+    public static final String SYMBOL_EMOTION  = "emotion";
 
     /** The name of XML tag key */
     private static final String XMLTAG_KEY = "string";
@@ -93,28 +93,30 @@ public class SymbolList implements WnnEngine {
         case LANG_EN:
             /* symbols for English IME */
             mSymbols.put(SYMBOL_ENGLISH, getXmlfile(R.xml.symbols_latin12_list));
+            mSymbols.put(SYMBOL_EMOTION, getXmlfile(R.xml.symbols_emotion_list));
             mCurrentList = mSymbols.get(SYMBOL_ENGLISH);
             break;
 
         case LANG_JA:
             /* symbols for Japanese IME */
-            mSymbols.put(SYMBOL_ENGLISH, getXmlfile(R.xml.symbols_latin1_list));
             mSymbols.put(SYMBOL_JAPANESE, getXmlfile(R.xml.symbols_japan_list));
-            mSymbols.put(SYMBOL_JAPANESE_FACE, getXmlfile(R.xml.symbols_japan_face_list));
-            mCurrentList = mSymbols.get(SYMBOL_ENGLISH);
+            mSymbols.put(SYMBOL_ENGLISH, getXmlfile(R.xml.symbols_latin1_list));
+            mSymbols.put(SYMBOL_EMOTION, getXmlfile(R.xml.symbols_emotion_list));
+            mCurrentList = mSymbols.get(SYMBOL_JAPANESE);
             break;
 
-        case LANG_ZHCN: 
+        case LANG_ZHCN:
             /* symbols for Chinese IME */
             mSymbols.put(SYMBOL_CHINESE, getXmlfile(R.xml.symbols_china_list));
             mSymbols.put(SYMBOL_ENGLISH, getXmlfile(R.xml.symbols_latin1_list));
+            mSymbols.put(SYMBOL_EMOTION, getXmlfile(R.xml.symbols_emotion_list));
             mCurrentList = mSymbols.get(SYMBOL_CHINESE);
             break;
-        }        
+        }
 
         mCurrentList = null;
     }
-    
+
     /**
      * Get a attribute value from a XML resource.
      *
@@ -181,10 +183,10 @@ public class SymbolList implements WnnEngine {
      **********************************************************************/
     /** @see com.googlecode.openwnn.legacy.WnnEngine#init */
     public void init() {}
-    
+
     /** @see com.googlecode.openwnn.legacy.WnnEngine#close */
     public void close() {}
-    
+
     /** @see com.googlecode.openwnn.legacy.WnnEngine#predict */
     public int predict(ComposingText text, int minLen, int maxLen) {
         /* ignore if there is no list for the type */
@@ -197,18 +199,18 @@ public class SymbolList implements WnnEngine {
         mCurrentListIterator = mCurrentList.iterator();
         return 1;
     }
-    
+
     /** @see com.googlecode.openwnn.legacy.WnnEngine#convert */
     public int convert(ComposingText text) {
         return 0;
     }
-    
+
     /** @see com.googlecode.openwnn.legacy.WnnEngine#searchWords */
     public int searchWords(String key) {return 0;}
 
     /** @see com.googlecode.openwnn.legacy.WnnEngine#searchWords */
     public int searchWords(WnnWord word) {return 0;}
-    
+
     /** @see com.googlecode.openwnn.legacy.WnnEngine#getNextCandidate */
     public WnnWord getNextCandidate() {
         if (mCurrentListIterator == null || !mCurrentListIterator.hasNext()) {
@@ -218,7 +220,7 @@ public class SymbolList implements WnnEngine {
         WnnWord word = new WnnWord(str, str);
         return word;
     }
-    
+
     /** @see com.googlecode.openwnn.legacy.WnnEngine#learn */
     public boolean learn(WnnWord word) {return false;}
     
