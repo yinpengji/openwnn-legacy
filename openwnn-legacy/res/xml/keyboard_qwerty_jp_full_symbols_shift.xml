@@ -49,7 +49,7 @@
     
   <Row>
     <Key android:codes="-1" android:keyIcon="@drawable/key_qwerty_shift" android:iconPreview="@drawable/key_qwerty_shift_b" android:keyWidth="15%p"
-         android:isModifier="true" android:isSticky="false" android:keyEdgeFlags="left"/>
+         android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
     <Key android:codes="65372" android:keyLabel="@string/key_qwerty_full_vertical_bar"/>
     <Key android:codes="65308" android:keyLabel="@string/key_qwerty_full_less_than_sign"/>
     <Key android:codes="65310" android:keyLabel="@string/key_qwerty_full_greater_than_sign"/>

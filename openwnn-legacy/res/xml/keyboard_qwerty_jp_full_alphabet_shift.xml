@@ -50,7 +50,7 @@
   
   <Row>
     <Key android:codes="-1" android:keyIcon="@drawable/key_qwerty_shift" android:iconPreview="@drawable/key_qwerty_shift_b" android:keyWidth="15%p"
-         android:isModifier="true" android:isSticky="false" android:keyEdgeFlags="left"/>
+         android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
     <Key android:codes="65338" android:keyLabel="Z"/>
     <Key android:codes="65336" android:keyLabel="X"/>
     <Key android:codes="65315" android:keyLabel="C"/>
