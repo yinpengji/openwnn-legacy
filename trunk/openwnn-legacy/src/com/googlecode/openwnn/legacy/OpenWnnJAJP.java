@@ -283,7 +283,7 @@ public class OpenWnnJAJP extends OpenWnn {
 
     /** Symbol lists to display when the symbol key is pressed */
     private static final String[] SYMBOL_LISTS = {
-    	SymbolList.SYMBOL_EMOTION, SymbolList.SYMBOL_ENGLISH, SymbolList.SYMBOL_JAPANESE
+    	SymbolList.SYMBOL_EMOTION, SymbolList.SYMBOL_JAPANESE, SymbolList.SYMBOL_ENGLISH
     };
 
     /** Current symbol list */
