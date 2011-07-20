@@ -32,29 +32,20 @@ import android.content.SharedPreferences;
 public class LetterConverterZH implements LetterConverter {
     /** HashMap for symbol conversion (Chinese mode) */
     private static final HashMap<String, String> convTable = new HashMap<String, String>() {{
-        put("-", "\u30fc"); put(".", "\u3002"); put(",", "\uff0c"); put("?", "\uff1f"); put("/", "\u3001");
-        put("@", "\uff20"); put("#", "\uff03"); put("%", "\uff05"); put("&", "\uff06"); put("*", "\u00d7");
-        put("+", "\uff0b"); put("=", "\u2014"); put("(", "\uff08"); put(")", "\uff09");
+        put(".", "\u3002"); put(",", "\uff0c"); put("?", "\uff1f"); put("(", "\uff08"); put(")", "\uff09");
         put("~", "\uff5e"); put("\"", "\u201c"); put("'", "\u2018"); put(":", "\uff1a"); put(";", "\uff1b");
-        put("!", "\uff01"); put("^", "\u2026\u2026"); put("\u00a5", "\uffe5"); put("$", "\uff04"); put("[", "\u3010");
-        put("]", "\u3011"); put("_", "\u2014\u2014"); put("{", "\u3014"); put("}", "\u3015");
-        put("`", "\u00b7"); put("<", "\u300a"); put(">", "\u300b"); put("\\", "\u3001"); put("|", "\u30fb");
-        put("1", "\uff11"); put("2", "\uff12"); put("3", "\uff13"); put("4", "\uff14"); put("5", "\uff15");
-        put("6", "\uff16"); put("7", "\uff17"); put("8", "\uff18"); put("9", "\uff19"); put("0", "\uff10");        
+        put("!", "\uff01"); put("^", "\u2026\u2026"); put("\u00a5", "\uffe5"); put("$", "\uffe5"); put("\\", "\u3001");
+        put("[", "\u3010"); put("]", "\u3011"); put("_", "\u2014\u2014"); put("{", "\u3014"); put("}", "\u3015");
+        put("`", "\u00b7"); put("<", "\u300a"); put(">", "\u300b"); 
     }};
 
     /** HashMap for symbol conversion(when the shift key is pressed) (Chinese mode) */
     private static final HashMap<String, String> convTableShifted = new HashMap<String, String>() {{
-        put(".", "\uff0e"); put(",", "\uff0c");
-        put("-", "\u30fc"); put("?", "\uff1f"); put("/", "\u3001");
-        put("@", "\uff20"); put("#", "\uff03"); put("%", "\uff05"); put("&", "\uff06"); put("*", "\u00d7");
-        put("+", "\uff0b"); put("=", "\uff0d"); put("(", "\uff08"); put(")", "\uff09");
-        put("~", "\u301c"); put("\"", "\u201d"); put("'", "\u2019"); put(":", "\uff1a"); put(";", "\uff1b");
-        put("!", "\uff01"); put("^", "\u2026\u2026"); put("\u00a5", "\uffe5"); put("$", "\uff04"); put("[", "\uff3b");
-        put("]", "\uff3d"); put("_", "\u2014\u2014"); put("{", "\u3014"); put("}", "\u3015");
-        put("`", "\uff40"); put("<", "\u3008"); put(">", "\u3009"); put("\\", "\u3001"); put("|", "\u30fb");
-        put("1", "\uff11"); put("2", "\uff12"); put("3", "\uff13"); put("4", "\uff14"); put("5", "\uff15");
-        put("6", "\uff16"); put("7", "\uff17"); put("8", "\uff18"); put("9", "\uff19"); put("0", "\uff10");
+        put(".", "\u3002"); put(",", "\uff0c"); put("?", "\uff1f"); put("(", "\uff08"); put(")", "\uff09");
+        put("~", "\uff5e"); put("\"", "\u201c"); put("'", "\u2018"); put(":", "\uff1a"); put(";", "\uff1b");
+        put("!", "\uff01"); put("^", "\u2026\u2026"); put("\u00a5", "\uffe5"); put("$", "\uffe5"); put("\\", "\u3001");
+        put("[", "\u3010"); put("]", "\u3011"); put("_", "\u2014\u2014"); put("{", "\u3014"); put("}", "\u3015");
+        put("`", "\u00b7"); put("<", "\u300a"); put(">", "\u300b"); 
     }};
 
     /***********************************************************************

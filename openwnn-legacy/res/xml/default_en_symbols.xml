@@ -65,7 +65,7 @@
   </Row>
   
   <Row android:rowEdgeFlags="bottom">
-    <Key android:codes="-114" android:keyLabel="@string/key_alt"
+    <Key android:codes="-114" android:keyIcon="@drawable/key_en_mode_half_num" android:iconPreview="@drawable/key_en_mode_change_b"
 	 android:popupKeyboard="@xml/default_en_switch_key"
          android:keyWidth="15%p" android:keyEdgeFlags="left"/>
     <Key android:codes="-106" android:keyLabel="SYM" android:keyWidth="10%p"/>
