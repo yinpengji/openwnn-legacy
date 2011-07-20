@@ -18,9 +18,9 @@
 	  android:keyWidth="10%p"
 	  android:horizontalGap="0dip"
 	  android:verticalGap="0dip"
-	  android:keyHeight="@dimen/key_height"
+	  android:keyHeight="@dimen/key_height_landscape"
 	  >
-
+  
   <Row>
     <Key android:codes="113" android:keyLabel="q" android:keyEdgeFlags="left"/>
     <Key android:codes="119" android:keyLabel="w"/>
@@ -35,8 +35,7 @@
   </Row>
   
   <Row>
-    <Key android:codes="97" android:keyLabel="a" android:horizontalGap="5%p" 
-         android:keyEdgeFlags="left"/>
+    <Key android:codes="97"  android:keyLabel="a" android:keyEdgeFlags="left"/>
     <Key android:codes="115" android:keyLabel="s"/>
     <Key android:codes="100" android:keyLabel="d"/>
     <Key android:codes="102" android:keyLabel="f"/>
@@ -44,14 +43,14 @@
     <Key android:codes="104" android:keyLabel="h"/>
     <Key android:codes="106" android:keyLabel="j"/>
     <Key android:codes="107" android:keyLabel="k"/>
-    <Key android:codes="108" android:keyLabel="l" android:keyEdgeFlags="right"/>
+    <Key android:codes="108" android:keyLabel="l"/>
+    <Key android:codes="65392" android:keyLabel="@string/key_qwerty_half_tyouon"
+         android:keyEdgeFlags="right"/>
   </Row>
   
   <Row>
-    <Key android:codes="-1"
-	 android:keyIcon="@drawable/key_qwerty_shift" android:iconPreview="@drawable/key_qwerty_shift_b"
-         android:keyWidth="15%p" android:isModifier="true"
-         android:isSticky="true" android:keyEdgeFlags="left"/>
+    <Key android:codes="-1" android:keyIcon="@drawable/key_qwerty_shift" android:iconPreview="@drawable/key_qwerty_shift_b" android:keyWidth="15%p"
+         android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
     <Key android:codes="122" android:keyLabel="z"/>
     <Key android:codes="120" android:keyLabel="x"/>
     <Key android:codes="99" android:keyLabel="c"/>
@@ -59,24 +58,22 @@
     <Key android:codes="98" android:keyLabel="b"/>
     <Key android:codes="110" android:keyLabel="n"/>
     <Key android:codes="109" android:keyLabel="m"/>
-    <Key android:codes="-100"
-	 android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b"
-	 android:keyWidth="15%p" android:keyEdgeFlags="right" android:isRepeatable="true"/>
+    <Key android:codes="-100" android:keyIcon="@drawable/key_del" android:iconPreview="@drawable/key_del_b" android:keyWidth="15%p" 
+         android:keyEdgeFlags="right" android:isRepeatable="true"/>
   </Row>
   
   <Row android:rowEdgeFlags="bottom">
-    <Key android:codes="-114" android:keyIcon="@drawable/key_en_mode_half_alpha" android:iconPreview="@drawable/key_en_mode_change_b"
-	 android:popupKeyboard="@xml/default_en_switch_key"
+    <Key android:codes="-230" android:keyIcon="@drawable/key_jp_mode_half_kata" android:iconPreview="@drawable/key_jp_mode_change_b"
+	 android:popupKeyboard="@xml/keyboard_switch_key_qwerty_jp"
          android:keyWidth="15%p" android:keyEdgeFlags="left"/>
-    <Key android:codes="-106" android:keyLabel="SYM" android:keyWidth="10%p"/>
-    <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"/>
-    <Key android:codes="32"
-	 android:keyIcon="@drawable/key_space" android:iconPreview="@drawable/key_space_b" 
+    <Key android:codes="-106" android:keyWidth="15%p" android:keyLabel="@string/key_jp_symbol"/>
+    <Key android:codes="32" android:keyIcon="@drawable/key_space" android:iconPreview="@drawable/key_space_b" 
          android:keyWidth="30%p" android:isRepeatable="true"/>
-    <Key android:codes="46" android:keyLabel="."  android:keyWidth="10%p"/>
-    <Key android:codes="63" android:keyLabel="\?" android:keyWidth="10%p"/>
-    <Key android:codes="-101"
-	 android:keyIcon="@drawable/key_enter" android:iconPreview="@drawable/key_enter_b" 
+    <Key android:codes="65380" android:keyLabel="@string/key_qwerty_half_comma"
+         android:keyWidth="12.5%p"/>
+    <Key android:codes="65377" android:keyLabel="@string/key_qwerty_half_period"
+         android:keyWidth="12.5%p"/>
+    <Key android:codes="-101" android:keyIcon="@drawable/key_enter_jp" android:iconPreview="@drawable/key_enter_jp_b" 
          android:keyWidth="15%p" android:keyEdgeFlags="right"/>
   </Row>
 </Keyboard>
